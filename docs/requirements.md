@@ -28,3 +28,20 @@ Guru TIK SMA menyusun soal dan merekap nilai secara manual, dan materi belum dik
 - Infrastruktur menggunakan satu instance VM (potensi *single point of failure*).
 - Belum menggunakan domain atau HTTPS definitif (dijadwalkan pada M04).
 - Target RPO dan RTO masih berupa rancangan awal sebelum diuji secara empiris.
+
+## Constraints
+- Azure Standard B2ats v2: 2 vCPU (burstable), 1 GB RAM, 30 GB Premium SSD
+- Ubuntu Server 24.04 LTS, satu IPv4 publik
+
+## Cakupan M03
+- **Termasuk:** repository, requirements, arsitektur v0.1, ADR-0001, aplikasi dasar dengan `/health`,
+  hardening SSH, UFW, Gunicorn, systemd, Caddy, deployment HTTP
+- **Tidak termasuk:** database produksi, container, IaC, CI/CD, domain dan HTTPS (M04),
+  backup dan restore (M05)
+
+## Kriteria penerimaan M03
+- [x] `/health` mengembalikan HTTP 200
+- [x] Gunicorn listen di `127.0.0.1:8000`
+- [x] Service tetap hidup setelah reboot
+- [x] Evidence tersimpan di `docs/evidence/m03/`
+- [x] Halaman utama dapat dibuka dari internet (HTTP), dites dari HP
