@@ -1,0 +1,18 @@
+# Manual Deployment Guide — M03
+
+## Path Aplikasi
+`/srv/cc-m03`
+
+## Service Management
+- Status: `sudo systemctl status cc-m03`
+- Restart: `sudo systemctl restart cc-m03`
+- Logs: `sudo journalctl -u cc-m03 -f`
+
+## Prosedur Update Kode
+```bash
+cd /srv/cc-m03
+git pull
+source .venv/bin/activate
+pip install -r requirements.txt
+sudo systemctl restart cc-m03
+curl -fsS [http://127.0.0.1:8000/health](http://127.0.0.1:8000/health)
