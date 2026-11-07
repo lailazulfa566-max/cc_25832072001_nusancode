@@ -28,7 +28,6 @@ Subscription ID sengaja tidak dicantumkan (tersanitasi).
 | Pengaturan SSH | docs/evidence/m03/ssh.txt |
 | Baseline keamanan | docs/evidence/m03/security-baseline.txt |
 | Health check | docs/evidence/m03/health-internal.txt, health-public.txt |
-| Akses dari luar | docs/evidence/m03/public-access.png |
 
 ## Hasil
 - Gunicorn listen di 127.0.0.1:8000 (loopback), Caddy di port 80.
