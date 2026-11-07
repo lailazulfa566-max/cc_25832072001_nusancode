@@ -1,0 +1,41 @@
+=== Tanggal ===
+Sat Nov  7 22:24:15 WIB 2026
+=== Boot terakhir ===
+2026-11-07 22:22:39
+=== User ===
+cloudstudent
+uid=1001(cloudstudent) gid=1001(cloudstudent) groups=1001(cloudstudent),27(sudo),100(users)
+=== SSH ===
+permitrootlogin no
+pubkeyauthentication yes
+passwordauthentication no
+allowusers cloudstudent
+=== Jenis kunci SSH ===
+ssh-rsa
+=== UFW ===
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp (OpenSSH)           ALLOW IN    Anywhere                  
+80/tcp                     ALLOW IN    Anywhere                  
+22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)             
+80/tcp (v6)                ALLOW IN    Anywhere (v6)             
+
+=== Port ===
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                     
+LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=510,fd=17))                  
+LISTEN 0      2048       127.0.0.1:8000      0.0.0.0:*    users:(("gunicorn",pid=953,fd=3),("gunicorn",pid=759,fd=3))
+LISTEN 0      4096       127.0.0.1:2019      0.0.0.0:*    users:(("caddy",pid=758,fd=3))                             
+LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=1119,fd=3),("systemd",pid=1,fd=89))     
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=510,fd=15))                  
+LISTEN 0      4096            [::]:22           [::]:*    users:(("sshd",pid=1119,fd=4),("systemd",pid=1,fd=90))     
+LISTEN 0      4096               *:80              *:*    users:(("caddy",pid=758,fd=7))                             
+=== Service enabled ===
+enabled
+enabled
+=== Paket upgradable ===
+0
