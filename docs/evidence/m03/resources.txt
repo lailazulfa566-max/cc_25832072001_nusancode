@@ -1,3 +1,16 @@
+2
                total        used        free      shared  buff/cache   available
-Mem:           887Mi       303Mi        64Mi       4.0Mi       546Mi       583Mi
-Swap:          1.0Gi        60Ki       1.0Gi
+Mem:           887Mi       307Mi       120Mi       4.0Mi       485Mi       579Mi
+Swap:          1.0Gi          0B       1.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  4.1G   24G  15% /
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0     7:0    0 13.1M  1 loop /snap/canonical-livepatch/414
+loop1     7:1    0 13.2M  1 loop /snap/canonical-livepatch/418
+loop2     7:2    0   74M  1 loop /snap/core22/2955
+loop3     7:3    0 44.7M  1 loop /snap/snapd/28254
+sda       8:0    0   30G  0 disk 
+├─sda1    8:1    0   29G  0 part /
+├─sda14   8:14   0    4M  0 part 
+├─sda15   8:15   0  106M  0 part /boot/efi
+└─sda16 259:0    0  913M  0 part /boot

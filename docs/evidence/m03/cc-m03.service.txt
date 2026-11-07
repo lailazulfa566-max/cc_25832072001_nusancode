@@ -1,0 +1,21 @@
+# /etc/systemd/system/cc-m03.service
+[Unit]
+Description=PTI 2802 M03 Flask Application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cloudstudent
+Group=cloudstudent
+WorkingDirectory=/home/cloudstudent/cc_25832072001_nusancode
+Environment="APP_ENV=development"
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/home/cloudstudent/cc_25832072001_nusancode/venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

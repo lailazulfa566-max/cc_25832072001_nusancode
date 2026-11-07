@@ -1,0 +1,12 @@
+● caddy.service - Caddy
+     Loaded: loaded (/usr/lib/systemd/system/caddy.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-11-07 21:56:53 WIB; 42s ago
+       Docs: https://caddyserver.com/docs/
+   Main PID: 762 (caddy)
+      Tasks: 7 (limit: 532)
+     Memory: 44.0M (peak: 44.4M)
+        CPU: 54ms
+     CGroup: /system.slice/caddy.service
+             └─762 /usr/bin/caddy run --environ --config /etc/caddy/Caddyfile
+
+Warning: some journal files were not opened due to insufficient permissions.

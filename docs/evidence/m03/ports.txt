@@ -1,6 +1,8 @@
 State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                     
-LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=492,fd=17))                  
-LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=492,fd=15))                  
-LISTEN 0      2048         0.0.0.0:80        0.0.0.0:*    users:(("gunicorn",pid=855,fd=3),("gunicorn",pid=757,fd=3))
-LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=1186,fd=3),("systemd",pid=1,fd=161))    
-LISTEN 0      4096            [::]:22           [::]:*    users:(("sshd",pid=1186,fd=4),("systemd",pid=1,fd=162))    
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=544,fd=15))                  
+LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=544,fd=17))                  
+LISTEN 0      4096       127.0.0.1:2019      0.0.0.0:*    users:(("caddy",pid=762,fd=3))                             
+LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=1111,fd=3),("systemd",pid=1,fd=89))     
+LISTEN 0      2048       127.0.0.1:8000      0.0.0.0:*    users:(("gunicorn",pid=968,fd=3),("gunicorn",pid=763,fd=3))
+LISTEN 0      4096            [::]:22           [::]:*    users:(("sshd",pid=1111,fd=4),("systemd",pid=1,fd=90))     
+LISTEN 0      4096               *:80              *:*    users:(("caddy",pid=762,fd=7))                             

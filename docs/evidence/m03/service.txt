@@ -1,16 +1,18 @@
 ● cc-m03.service - PTI 2802 M03 Flask Application
      Loaded: loaded (/etc/systemd/system/cc-m03.service; enabled; preset: enabled)
-     Active: active (running) since Sat 2026-11-07 13:17:05 WIB; 33min ago
-   Main PID: 1974 (gunicorn)
-      Tasks: 3 (limit: 532)
-     Memory: 29.7M (peak: 30.0M)
-        CPU: 553ms
+     Active: active (running) since Sat 2026-11-07 21:56:52 WIB; 44s ago
+   Main PID: 763 (gunicorn)
+      Tasks: 4 (limit: 532)
+     Memory: 35.4M (peak: 35.8M)
+        CPU: 304ms
      CGroup: /system.slice/cc-m03.service
-             ├─1974 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/python3 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
-             └─1976 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/python3 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+             ├─763 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/python3 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+             └─968 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/python3 /home/cloudstudent/cc_25832072001_nusancode/venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
 
-Nov 07 13:17:05 LailaZulfa gunicorn[1974]: [2026-11-07 13:17:05 +0700] [1974] [INFO] Starting gunicorn 26.2.0
-Nov 07 13:17:05 LailaZulfa gunicorn[1974]: [2026-11-07 13:17:05 +0700] [1974] [INFO] Listening at: http://127.0.0.1:8000 (1974)
-Nov 07 13:17:05 LailaZulfa gunicorn[1974]: [2026-11-07 13:17:05 +0700] [1974] [INFO] Using worker: gthread
-Nov 07 13:17:05 LailaZulfa gunicorn[1976]: [2026-11-07 13:17:05 +0700] [1976] [INFO] Booting worker with pid: 1976
-Nov 07 13:17:05 LailaZulfa gunicorn[1974]: [2026-11-07 13:17:05 +0700] [1974] [INFO] Control socket listening at /home/cloudstudent/.gunicorn/gunicorn.ctl
+Nov 07 21:56:53 LailaZulfa gunicorn[763]: [2026-11-07 21:56:53 +0700] [763] [INFO] Starting gunicorn 26.2.0
+Nov 07 21:56:54 LailaZulfa gunicorn[763]: [2026-11-07 21:56:53 +0700] [763] [INFO] Listening at: http://127.0.0.1:8000 (763)
+Nov 07 21:56:54 LailaZulfa gunicorn[763]: [2026-11-07 21:56:53 +0700] [763] [INFO] Using worker: gthread
+Nov 07 21:56:54 LailaZulfa gunicorn[968]: [2026-11-07 21:56:53 +0700] [968] [INFO] Booting worker with pid: 968
+Nov 07 21:56:54 LailaZulfa gunicorn[763]: [2026-11-07 21:56:54 +0700] [763] [INFO] Control socket listening at /home/cloudstudent/.gunicorn/gunicorn.ctl
+Nov 07 21:57:20 LailaZulfa gunicorn[968]: 127.0.0.1 - - [07/Nov/2026:21:57:20 +0700] "GET /health HTTP/1.1" 200 91 "-" "curl/8.5.0"
+Warning: journal has been rotated since unit was started and some journal files were not opened due to insufficient permissions, output may be incomplete.
