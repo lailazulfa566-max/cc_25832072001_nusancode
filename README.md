@@ -36,16 +36,5 @@ model atau inferensi lokal di server.
 | Alamat publik | belum tersedia (dijadwalkan di M04) · IPv4 `20.211.31.222` |
 | Stack | Flask, Gunicorn (1 worker, 2 thread), systemd, Caddy, UFW, SQLite |
 
-## Arsitektur
-```mermaid
-flowchart TB
-    U[Pengguna] -->|HTTP/HTTPS| C[Caddy]
-    C -->|127.0.0.1:8000| G[Gunicorn]
-    G --> F[Flask]
-    F --> D[(SQLite)]
-    F -->|HTTPS| O[OpenAI API]
-    D -->|backup terenkripsi| B[(Storage privat offsite)]
-```
-
 ## Kontak
 Lailatul Zulfa · lailatulzulfa@institutpendidikan.ac.id
