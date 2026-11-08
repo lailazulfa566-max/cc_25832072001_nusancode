@@ -9,7 +9,7 @@ Semester Ganjil 2026/2027 · Dosen: Muhaemin Sidiq, S.Pd., M.Pd.
 ## 1. Masalah dan solusi
 Guru TIK SMA menyusun soal dan merekap nilai secara manual, dan materi belum
 dikaitkan dengan kearifan lokal. NusanCode dirancang menyediakan e-modul bertema
-kearifan lokal, pengumpulan tugas, rekap nilai, dan generator kuis pilihan ganda.
+kearifan lokal, pengumpulan tugas, rekap nilai, dan generator kuis dengan berbagai bentuk soal.
 
 ## 2. Definisi istilah
 "Deep Learning" pada judul berarti **pendekatan pembelajaran mendalam
