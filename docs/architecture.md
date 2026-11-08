@@ -20,9 +20,9 @@ flowchart TB
 ## Keputusan keamanan (terbukti di `docs/evidence/m03/`)
 - Administrasi memakai akun non-root `cloudstudent`
 - Login root dan password SSH dinonaktifkan; hanya `cloudstudent` yang diizinkan
-- UFW aktif (22 dan 80), NSG Azure konsisten
+- UFW aktif dengan akses SSH (22) dan HTTP (80); aturan NSG Azure juga telah disesuaikan
 - Backend loopback-only; Caddy satu-satunya pintu publik
-- Service `cc-m03` dan `caddy` aktif otomatis setelah reboot
+- Service `cc-m03` dan `caddy` dikonfigurasi agar berjalan otomatis saat VPS dinyalakan ulang
 
 ## Batasan saat ini
 - HTTP saja (domain dan HTTPS dijadwalkan M04)
