@@ -54,7 +54,8 @@ Pada M03 belum ada secret. Untuk fitur berikutnya, simpan secret di `.env` di lu
 ## Prosedur update
 ```bash
 cd ~/cc_25832072001_nusancode
-git pull
+git switch main
+git pull origin main
 source venv/bin/activate
 python -m pip install -r requirements.txt
 sudo systemctl restart cc-m03
@@ -64,10 +65,14 @@ curl -fsS http://127.0.0.1/health
 ## Rollback dasar
 ```bash
 git log --oneline --decorate -10
-git checkout m03
+# Kembali ke titik rilis M03 jika diperlukan:
+git switch --detach m03
 sudo systemctl restart cc-m03
 curl -fsS http://127.0.0.1/health
+# Kembali ke branch utama setelah pemeriksaan:
 git switch main
+sudo systemctl restart cc-m03
+curl -fsS http://127.0.0.1/health
 ```
 
 ## Troubleshooting
