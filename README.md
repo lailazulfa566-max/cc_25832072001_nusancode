@@ -86,9 +86,11 @@ Rencana (belum dikerjakan):
 | ev04 | Arsitektur dan ADR | `docs/architecture.md`, `docs/adr/` | Sah (M03) |
 | ev05 | Backup | `docs/evidence/ev05-backup.md` | Belum (M05) |
 | ev06 | Restore (RTO/RPO) | `docs/evidence/ev06-restore.md` | Belum (M05) |
-| ev07 | TCO 12 bulan | `docs/evidence/ev07-tco-12bulan.md` | Belum |
+| ev07 | TCO 12 bulan dan bukti Cost Analysis Azure | `docs/evidence/ev07-tco-12bulan.md`, `docs/evidence/ev07-cost-analysis.md` | Dokumen rancangan dan bukti Cost Analysis tersedia; proyeksi TCO 12 bulan masih perlu diverifikasi |
 | ev08 | Uji beban | `docs/evidence/ev08-load-test.md` | Belum |
 | ev09 | Uji domain dan peran | `docs/evidence/ev09-uji-domain.md` | Belum |
+
+**Catatan EV-07:** Nilai actual cost dan forecast pada Cost Analysis berasal dari cakupan/periode tampilan yang berbeda. Forecast yang terlihat bukan proyeksi 12 bulan. Estimasi TCO tahunan belum dinyatakan final sampai tarif dan asumsi pemakaian resource diverifikasi.
 
 ## 10. Milestone dan release
 | Milestone | Tag | Status |
